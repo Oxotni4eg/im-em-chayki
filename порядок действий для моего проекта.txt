@@ -1,0 +1,9 @@
+������� �������� ��� ����� �������:
+1. composer create-project laravel/laravel
+2. composer install ( cmd openserver )
+3. npm install
+4. composer require laravel/ui
+5. php artisan ui bootstrap
+6. npm install && npm run dev
+7. php artisan ui vue --auth
+npm install && npm run dev
