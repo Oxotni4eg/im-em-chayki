@@ -8,3 +8,5 @@
 7. php artisan ui vue --auth
 npm install && npm run dev
 npm i jquery-validation
+php artisan migrate
+https://github.com/binshops/laravel-blog

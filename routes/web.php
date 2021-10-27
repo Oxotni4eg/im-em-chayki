@@ -33,4 +33,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::post('/sendmail', [App\Http\Controllers\Ajax\ContactController::class, 'send'])->name('send');
 
-
+Route::get('/blog', function () {
+    return redirect('http://im-em-chayki.localhost/en/blog');
+});
