@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,15 @@ Route::get('/page/istoriya', function () {
     return view('page/istoriya');
 });
 
+Route::get('/page/feedback', function () {
+    return view('page/feedback');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::post('/sendmail', [App\Http\Controllers\Ajax\ContactController::class, 'send'])->name('send');
+
+

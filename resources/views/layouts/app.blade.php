@@ -11,6 +11,10 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/scripts.js') }}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.min.js" defer></script>
+
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -52,10 +56,10 @@
                                 <li><a class="dropdown-item" href="/page/nasha-deyatelnost">Наша деятельность</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="/news">Новости</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/gallery">Фотоальбомы</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/contacts">Контакты</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/feedback">Обратная связь</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/page/news">Новости</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/page/gallery">Фотоальбомы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/page/contacts">Контакты</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/page/feedback">Обратная связь</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
