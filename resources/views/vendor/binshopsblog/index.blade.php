@@ -5,7 +5,7 @@
 @endsection
 
 @section("content")
-
+<div class="container">
     <div class='col-sm-12 binshopsblog_container'>
         @if(\Auth::check() && \Auth::user()->canManageBinshopsBlogPosts())
             <div class="text-center">
@@ -45,17 +45,19 @@
 
                 @endif
 
-                <div class="container">
+                <div class="container d-flex">
                     <div class="row">
                         @forelse($posts as $post)
                             @include("binshopsblog::partials.index_loop")
                         @empty
                             <div class="col-md-12">
-                                <div class='alert alert-danger'>No posts!</div>
+                                <div class='alert alert-danger'>Новостей нет!</div>
                             </div>
                         @endforelse
                     </div>
+
                 </div>
+
             </div>
             <div class="col-md-3">
                 <h6>Категории:</h6>
@@ -75,7 +77,8 @@
         @if (config('binshopsblog.search.search_enabled') )
             @include('binshopsblog::sitewide.search_form')
         @endif
-        <div class="row">
+            {{--Как то криво работает выбор языки и вывод категорий--}}
+{{--        <div class="row">
             <div class="col-md-12 text-center">
                 @foreach($lang_list as $lang)
                     <a href="{{route("binshopsblog.index" , $lang->locale)}}">
@@ -83,7 +86,7 @@
                     </a>
                 @endforeach
             </div>
-        </div>
+        </div>--}}
     </div>
-
+</div>
 @endsection

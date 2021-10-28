@@ -117,8 +117,8 @@ return [
     'captcha' => [
         'captcha_enabled' => true, // true = we should use a captcha, false = turn it off. If comments are disabled this makes no difference.
         'captcha_type' => \BinshopsBlog\Captcha\Basic::class, // this should be a class that implements the \BinshopsBlog\Interfaces\CaptchaInterface interface
-        'basic_question' => "What is the opposite of white?", // a simple captcha question to always ask (if captcha_type is set to 'basic'
-        'basic_answers' => "black,dark", // comma separated list of possible answers. Don't worry about case.
+        'basic_question' => "Назовите противоположный цвет белому?", // a simple captcha question to always ask (if captcha_type is set to 'basic'
+        'basic_answers' => "черный, тёмный, темный, чёрный", // comma separated list of possible answers. Don't worry about case.
     ],
 
     ////////// RSS FEED

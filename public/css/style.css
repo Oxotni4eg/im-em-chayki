@@ -30,3 +30,23 @@ body {
 #senderror span {
     font-weight: bold;
 }
+
+.gues_auth_add_comments {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.blog-image a img {
+    width: 100%;
+}
+
+.search .blog-image a img {
+    width: 50%;
+}
+
+.margin-top-large {
+    margin-top: 70px;
+}
+

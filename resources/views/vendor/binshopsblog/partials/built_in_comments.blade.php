@@ -22,7 +22,7 @@
 
 
 @empty
-    <div class='alert alert-info'>No comments yet! Why don't you be the first?</div>
+    <div class='alert alert-info'>Пока без коментариев! Почему бы тебе не стать первым?</div>
 @endforelse
 
 @if(count($comments)> config("binshopsblog.comments.max_num_of_comments_to_show",500) - 1)

@@ -10,3 +10,5 @@ npm install && npm run dev
 npm i jquery-validation
 php artisan migrate
 https://github.com/binshops/laravel-blog
+Изменил язык комментарий, каптчу , проверку для добавления комментарий( только авторизованные пользователи могут добавлять их )
+Изменил вывод новостей

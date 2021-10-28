@@ -56,7 +56,7 @@
                                 <li><a class="dropdown-item" href="/page/nasha-deyatelnost">Наша деятельность</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="/page/news">Новости</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/blog">Новости</a></li>
                         <li class="nav-item"><a class="nav-link" href="/page/gallery">Фотоальбомы</a></li>
                         <li class="nav-item"><a class="nav-link" href="/page/contacts">Контакты</a></li>
                         <li class="nav-item"><a class="nav-link" href="/page/feedback">Обратная связь</a></li>

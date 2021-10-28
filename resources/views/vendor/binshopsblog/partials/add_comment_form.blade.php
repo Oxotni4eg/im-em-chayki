@@ -1,18 +1,20 @@
+@auth
+
 <div class='add_comment_area'>
-    <h5 class='text-center'>Add a comment</h5>
+    <h5 class='text-center'>Добавить комментарий</h5>
     <form method='post' action='{{route("binshopsblog.comments.add_new_comment",[app('request')->get('locale'),$post->slug])}}'>
         @csrf
 
 
         <div class="form-group ">
 
-            <label id="comment_label" for="comment">Your Comment </label>
+            <label id="comment_label" for="comment">Ваш комментарий </label>
                     <textarea
                             class="form-control"
                             name='comment'
                             required
                             id="comment"
-                            placeholder="Write your comment here"
+                            placeholder="Напишите свой комментарий..."
                             rows="7">{{old("comment")}}</textarea>
 
 
@@ -25,13 +27,13 @@
 
                     <div class='col'>
                         <div class="form-group ">
-                            <label id="author_name_label" for="author_name">Your Name </label>
+                            <label id="author_name_label" for="author_name">Ваше Имя: </label>
                             <input
                                     type='text'
                                     class="form-control"
                                     name='author_name'
                                     id="author_name"
-                                    placeholder="Your name"
+                                    placeholder="Ваше Имя..."
                                     required
                                     value="{{old("author_name")}}">
                         </div>
@@ -40,15 +42,15 @@
                     @if(config("binshopsblog.comments.ask_for_author_email"))
                         <div class='col'>
                             <div class="form-group">
-                                <label id="author_email_label" for="author_email">Your Email
-                                    <small>(won't be displayed publicly)</small>
+                                <label id="author_email_label" for="author_email">Ваш Email:
+                                    <small>(не будет отображаться публично)</small>
                                 </label>
                                 <input
                                         type='email'
                                         class="form-control"
                                         name='author_email'
                                         id="author_email"
-                                        placeholder="Your Email"
+                                        placeholder="Ваш Email..."
                                         required
                                         value="{{old("author_email")}}">
                             </div>
@@ -57,7 +59,7 @@
                 @endif
 
 
-                @if(config("binshopsblog.comments.ask_for_author_website"))
+{{--                @if(config("binshopsblog.comments.ask_for_author_website"))
                     <div class='col'>
                         <div class="form-group">
                             <label id="author_website_label" for="author_website">Your Website
@@ -73,7 +75,7 @@
                         </div>
                     </div>
 
-                @endif
+                @endif--}}
             </div>
         </div>
 
@@ -91,3 +93,16 @@
 
     </form>
 </div>
+
+@endauth
+
+@guest
+<div class="gues_auth_add_comments" style="
+                                        font-weight: bold;
+                                        text-align: center;
+                                        font-size: 24px;
+                                        text-transform: uppercase;">
+    Войдите в систему, что бы добавить комментарий!</div>
+@endguest
+
+
