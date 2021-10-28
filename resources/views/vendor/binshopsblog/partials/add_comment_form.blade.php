@@ -97,7 +97,7 @@
 @endauth
 
 @guest
-<div class="gues_auth_add_comments" style="
+<div class="gues_auth_add_comments alert-link" style="
                                         font-weight: bold;
                                         text-align: center;
                                         font-size: 24px;

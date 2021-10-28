@@ -26,6 +26,10 @@ Route::get('/page/feedback', function () {
     return view('page/feedback');
 });
 
+Route::get('/page/gallery', function () {
+    return view('page/gallery');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
