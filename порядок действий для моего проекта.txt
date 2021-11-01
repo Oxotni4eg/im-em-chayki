@@ -1,10 +1,10 @@
 ������� �������� ��� ����� �������:
 1. composer create-project laravel/laravel
 2. composer install ( cmd openserver )
-3. npm install
+3.
 4. composer require laravel/ui
 5. php artisan ui bootstrap
-6. npm install && npm run dev
+6.
 7. php artisan ui vue --auth
 npm install && npm run dev
 npm i jquery-validation
@@ -13,3 +13,6 @@ https://github.com/binshops/laravel-blog
 Изменил язык комментарий, каптчу , проверку для добавления комментарий( только авторизованные пользователи могут добавлять их )
 Изменил вывод новостей
 Добавил вход в админ панель ( если ты именно админ ) в меню
+php artisan storage: link
+Реализован метод удаления альбомов с удалением фотографий ( папки + фото)+ из базы
+Реализован фотоальбом ( не получилось ограничить доступ к определнынм роутам лишним пользователям)

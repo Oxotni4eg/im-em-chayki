@@ -58,10 +58,12 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="/blog">Новости</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/page/gallery">Фотоальбомы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/gallery">Фотоальбомы</a></li>
                         <li class="nav-item"><a class="nav-link" href="/page/feedback">Обратная связь</a></li>
+
                         @if(\Auth::check() && \Auth::user()->canManageBinshopsBlogPosts())
                             <li class="nav-item"><a class="nav-link" href="{{route("binshopsblog.admin.index")}}">Перейти в admin-панель</a></li>
+                            <li class="nav-item"><a class="nav-link" {{ Request::is('albums/create') ? 'font-weight-bold' : '' }} href="/albums/create">Создать новый альбом</a></li>
                         @endif
                     </ul>
 
@@ -105,6 +107,7 @@
         </nav>
 
         <main class="py-4">
+            @include('inc.flashMessage')
             @yield('content')
         </main>
 
