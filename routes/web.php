@@ -52,6 +52,18 @@ Route::get('/page/contacts', function () {
     return view('page/contacts');
 });
 
+Route::get('/page/uvazhaemye-druzya', function () {
+    return view('page/uvazhaemye-druzya');
+});
+
+Route::get('/page/bronirovaniya-putevok', function () {
+    return view('page/bronirovaniya-putevok');
+});
+
+Route::get('/page/obshie-polozheniya', function () {
+    return view('page/obshie-polozheniya');
+});
+
 Route::get('/page/feedback', function () {
     return view('page/feedback');
 });
