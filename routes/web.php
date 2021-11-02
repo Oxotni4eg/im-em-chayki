@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers;
+use App\Http\Controllers\CalenderController;
 
 
 /*
@@ -79,3 +80,10 @@ Route::delete('/photos/{id}', 'PhotosController@destroy')->middleware('auth');
 /*if (Auth::user()->email = "vlad.szma@gmail.com") {
 
 }*/
+
+
+//Роуты для календаря
+
+Route::get('full-calender', [App\Http\Controllers\FullCalenderController::class, 'index']);
+
+Route::post('full-calender/action', [App\Http\Controllers\FullCalenderController::class, 'action']);

@@ -55,6 +55,7 @@
                                 <li><a class="dropdown-item" href="/page/rabota-s-roditelyami">Работа с родителями</a></li>
                                 <li><a class="dropdown-item" href="/page/nasha-deyatelnost">Наша деятельность</a></li>
                                 <li><a class="dropdown-item" href="/page/contacts">Контакты</a></li>
+                                <li><a class="dropdown-item" href="/full-calender">Календарь</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="/blog">Новости</a></li>
